@@ -1,0 +1,383 @@
+/* root */
+:root {
+  --pure-white: 255, 255, 255;
+  --pure-black: 0, 0, 0;
+  --zircon-200: 241, 243, 255;
+  --zircon-400: 92, 184, 95;
+  --card-border: 208, 208, 208;
+  --blue-CTA: 13, 40, 166;
+  --grey-border: 212, 212, 212;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}
+
+header {
+  z-index: 10;
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(var(--zircon-200), 1);
+}
+
+nav {
+  width: 80vw;
+  padding: 5rem;
+}
+
+#regBtn {
+  background-color: rgba(var(--zircon-400), 1);
+  color: rgba(var(--pure-white));
+}
+
+.HeroSection {
+  display: flex;
+  justify-content: center;
+  height: 55vh;
+  background-color: rgba(var(--zircon-200), 1);
+}
+
+.Herolah {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin-left: 8rem;
+}
+
+.HeroInfo {
+  width: 50%;
+}
+
+.HeroInfo h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.HeroInfo p {
+  margin-top: 1rem;
+  width: 28.75rem;
+  font-size: 14px;
+}
+
+.HeroInfo button {
+  background-color: rgba(var(--zircon-400), 1);
+  color: rgba(var(--pure-white));
+}
+
+.HeroImage {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  bottom: 0;
+}
+
+.HeroImage img:first-child {
+  z-index: 2;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.HeroImage img:nth-child(2) {
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+
+.OurServicesSection {
+  padding: 6rem;
+  justify-content: space-around;
+}
+
+.OurServicesImage {
+  width: 40%;
+}
+
+.OurServicesImage img {
+  width: 100%;
+}
+
+.OurServicesInfo {
+  width: 35%;
+}
+
+.OurServicesInfo p {
+  margin: 3rem 0 1.5rem 0;
+}
+
+.OurServicesInfo ul {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 0;
+  list-style: none;
+}
+
+.OurServicesInfo li:has(div) div {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.OurServicesInfo li:has(div) div img {
+  width: 24px;
+  height: 24px;
+}
+
+.OurServicesInfo li:has(div) div p {
+  margin: 0;
+}
+
+.WhyUsCardSection {
+  height: 20%;
+  padding: 0 5rem;
+}
+
+.WhyUsIntro {
+  padding-bottom: 2rem;
+  padding-left: 5rem;
+}
+
+.WhyUsIntro h3 {
+  padding-bottom: 0.5rem;
+}
+
+.WhyUsCard {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border: 1px solid rgba(var(--card-border), 1);
+  border-radius: 8px;
+  width: 23%;
+  padding: 1.5rem;
+}
+
+.WhyUsCard h4 {
+  margin: 0;
+}
+
+.WhyUsCard p {
+  margin: 0;
+}
+
+.WhyUsCard img {
+  width: 32px;
+}
+
+.carousel-inner {
+  padding: 1em;
+}
+.card {
+  margin: 0 0.5em;
+  box-shadow: 2px 6px 8px 0 rgba(22, 22, 26, 0.18);
+  border: none;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  background-color: #e1e1e1 !important;
+  width: 6vh !important;
+  height: 6vh !important;
+  border-radius: 50% !important;
+  top: 50% !important;
+  transform: translateY(-50%) !important;
+}
+
+/* .TestimonialSection {
+  border: 1px solid red;
+}
+
+#carouselExample {
+  background-color: black;
+  border: 1px solid green;
+}
+
+#cont-carousel {
+  margin: 0 auto;
+  background-color: rgba(var(--zircon-200), 1);
+  width: 80vw;
+  border: 1px solid blue;
+}
+
+#cont-carousel .carousel-item {
+  width: 50%;
+  border: 5px solid brown;
+} */
+/* 
+#prevBtn {
+  background-color: rgba(var(--pure-white), 1);
+} */
+
+.CTABannerSection {
+  padding: 4rem;
+  margin: 7rem 0;
+}
+
+.CTABannerCard {
+  padding: 4rem 0;
+  width: 80vw;
+  border-radius: 13px;
+  background-color: rgba(var(--blue-CTA), 1);
+  color: rgba(var(--pure-white), 1);
+  gap: 1rem;
+}
+
+.CTABannerCard h2 {
+  font-weight: 700;
+  font-size: 2.25rem;
+}
+
+.CTABannerCard p {
+  font-weight: 300;
+  font-size: 0.875rem;
+  margin: 0;
+  width: 30vw;
+  text-align: center;
+}
+
+.CTABannerCard button {
+  margin-top: 2.5rem;
+  background-color: rgba(var(--zircon-400), 1);
+  color: rgba(var(--pure-white));
+}
+
+.FAQSection {
+  margin-bottom: 5rem;
+}
+
+#accordionFlushExample {
+  gap: 1rem;
+  width: 50vw;
+}
+
+#accordionFlushExample div {
+  border: none;
+}
+
+#accordionFlushExample button {
+  border: 1px solid rgba(var(--grey-border), 1);
+  border-radius: 4px;
+}
+
+footer {
+  margin-bottom: 90px;
+}
+
+.ContactUsSection {
+  width: 20vw;
+}
+
+.NavSection a {
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: rgba(var(--pure-black), 1);
+}
+
+.ConnectWithUsSection img {
+  margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+  .HeroSection {
+    height: 100vh;
+  }
+
+  .Herolah {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    margin-left: 2rem;
+  }
+
+  .HeroInfo {
+    width: 100%;
+  }
+
+  .HeroImage {
+    width: 100%;
+  }
+
+  .OurServicesSection {
+    align-items: center;
+  }
+
+  .OurServicesImage {
+    width: 90%;
+  }
+
+  .OurServicesInfo {
+    width: 85%;
+  }
+
+  .WhyUsCardSection {
+    height: 100%;
+    padding: 0;
+    margin-bottom: 5rem;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .WhyUsCard {
+    width: 100%;
+  }
+
+  .WhyUsIntro {
+    text-align: center;
+    padding-bottom: 1.5rem;
+    padding-left: 0;
+  }
+
+  .WhyUsIntro h3 {
+    padding-bottom: 0.5rem;
+  }
+
+  .TestimonialSection {
+    text-align: center;
+  }
+
+  .CTABannerCard {
+    width: 90vw;
+  }
+
+  .CTABannerCard h2 {
+    font-weight: 700;
+    font-size: 1.5rem;
+    text-align: center;
+    width: 50%;
+  }
+
+  .CTABannerCard p {
+    width: 40vw;
+  }
+
+  .FAQSection {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 90vw;
+  }
+
+  .accordion {
+    width: 90vw !important;
+  }
+
+  .ContactUsSection {
+    width: 80vw;
+  }
+}
+
+@media (min-width: 768px) {
+  .carousel-inner {
+    display: flex;
+  }
+
+  .carousel-item {
+    margin-right: 0 !important;
+    flex: 0 0 33.333333%;
+    display: block !important;
+  }
+}
